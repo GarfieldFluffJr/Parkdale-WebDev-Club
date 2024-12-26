@@ -1,0 +1,18 @@
+http://k88hudson.github.io/syntax-highlighting-theme-generator/www/ 
+
+@inlineCodeColor: #f5a8b8
+@inlineCodeBackground: #212121
+@blockBackground: #212121
+@baseColor: #f77e7e
+@selectedColor: #89a9c8
+@highlightBackground: #404040
+@highlightAccent: #e694c4
+@commentColor: #29AB87
+@punctuationColor: #a6a6a6
+@propertyColor: #FF7F50
+@selectorColor: #7da9e3
+@operatorColor: #a6a6a6
+@operatorBg: #212121
+@variableColor: #6F6BE6
+@functionColor: #E6CB6B
+@keywordColor: #D473D4

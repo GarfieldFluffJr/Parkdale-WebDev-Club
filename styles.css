@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 18px;
+  --background-theme: #333;
+  --lighter-theme: #555;
+  --super-light-theme: #e1e1e1;
+  font-family: "Nunito", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* So navbar doesn't block the top content */
+  padding-top: 2.5rem;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-theme);
+  color: white;
+  z-index: 10000;
+}
+
+.nav-title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+
+.nav-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+.nav-links li:hover {
+  background-color: var(--lighter-theme);
+}
+
+.nav-toggle {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 960px) {
+  body {
+    padding-top: 4rem;
+  }
+}
+
+@media (max-width: 665px) {
+  body {
+    padding-top: 2.5rem;
+  }
+
+  .nav-toggle {
+    display: inline;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    text-align: center;
+  }
+
+  .nav-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+/* Main page header title */
+.header {
+  text-align: center;
+}
+
+/* Main page content */
+.web-dev-intro-content {
+  padding: 0.5rem;
+  padding-top: 0;
+}
+
+#syllabus-pres {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#syllabus-pres-hover-bg {
+  position: absolute;
+  width: 487px;
+  height: 306px;
+  background-color: var(--lighter-theme);
+  z-index: -1;
+  display: none;
+}
+
+#syllabus-pres-hover-bg.active {
+  display: block;
+}
+
+/* Example club sites */
+#example-club-site-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.example-club-site {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: var(--background-theme) 3px solid;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+
+.example-club-site:hover {
+  transform: scale(1.05);
+  background-color: var(--super-light-theme);
+}
+
+.example-club-site-link {
+  text-decoration: none;
+  color: var(--background-theme);
+  font-weight: bold;
+}
+
+.example-club-site-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 540px) {
+  #example-club-site-container {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  #example-club-site-header {
+    margin: 0;
+  }
+
+  .example-club-site {
+    margin-bottom: 0;
+    width: 95%;
+    text-align: center;
+  }
+}
+
+hr {
+  width: 98%;
+  height: 5px;
+  border-radius: 20px;
+  background: var(--lighter-theme);
+}
+
+/* Web Dev table of contents */
+.web-dev-content {
+  padding: 0.5rem;
+}
+
+.web-dev-TOC-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 80px;
+}
+
+.web-dev-TOC-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.web-dev-TOC-header {
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+.link:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* HTML Web Dev content */
+#html-header {
+  scroll-margin-top: 90px;
+}
+
+/* General headers and content */
+.content-header {
+  margin-bottom: 0.75rem;
+}
+
+/* .content {
+  padding-left: 0.5rem;
+} */
+
+.inline-link {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.inline-link:hover {
+  text-decoration: underline;
+}

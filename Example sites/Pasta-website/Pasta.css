@@ -1,0 +1,24 @@
+a {
+  display: block;
+}
+
+#testLink {
+  color: blue;
+}
+
+#headerList {
+  color: black;
+  background-color: pink;
+}
+
+.testClass {
+  color: purple;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(252, 144, 3);
+}

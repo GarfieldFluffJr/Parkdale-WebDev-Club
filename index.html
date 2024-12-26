@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PCI Coding Club</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="custom-prism.css" />
+    <script src="prism.js" defer></script>
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/6bc841c0da.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <!-- Neocities free hosting -->
+  <body>
+    <nav class="navbar">
+      <div class="nav-title">PCI Coding Club 2023</div>
+      <a href="#" class="nav-toggle"><i class="fa-solid fa-bars"></i></a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="#">Web Development</a></li>
+          <li>
+            <a href="Other content/Javascript/javascript.html">Javascript</a>
+          </li>
+          <li>
+            <a href="Other content/VScode extensions/vscode_extensions.html"
+              >VScode extensions</a
+            >
+          </li>
+          <li>
+            <a href="Other content/Resources/resources.html">Other resources</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header">
+      <h1>Learn how to make a basic website from scratch!</h1>
+    </div>
+    <section class="web-dev-intro-content">
+      <div class="background">
+        <p>
+          Hello! Welcome to Parkdale's very first coding club! Here, you'll find
+          everything that we've done this year (2023), as well as the syllabus
+          and useful resources. I'll also post some other cool stuff like how to
+          set up VS code and what extensions I use, which free resources I like
+          most, etc. ❤
+        </p>
+      </div>
+      <div class="description">
+        <!-- <div class="google-classroom">
+          <p>
+            Join the
+            <a
+              href="https://classroom.google.com/c/NTE4MTA2NzYwOTcw?cjc=kgdhevn"
+              target="_blank"
+              >Google Classroom</a
+            >: <strong>kgdhevn</strong>
+          </p>
+          <p>
+            <strong>Share your creations with us!</strong> Either check out the
+            classroom or fill out
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSexo3462nloTfNI5OE8zepYW1skFEuzWFz2nAr1GSsR-87paw/viewform?usp=sf_link"
+              target="_blank"
+              >this google form</a
+            >
+            if you'd like me to feature your site! If you have any suggestions,
+            either regarding any future content or website updates, please fill
+            out
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeICInOVFWoE5t4CH2gwDHV0KDdXc4lkl8-EbhD4VBH_i2SGw/viewform?usp=sf_link"
+              target="_
+            "
+              >this google form</a
+            >. Thank you! 🙂
+          </p>
+        </div> -->
+        <div class="presentation">
+          <p>
+            Here's the
+            <a
+              href="https://docs.google.com/presentation/d/1TT3GqwBCVne4BPqIQgROEZ3gmggch4iypg3w0pRzYMw/edit?usp=sharing"
+              target="_blank"
+              class="inline-link"
+              >original presentation</a
+            >
+            with extra visuals which you may find useful. It only goes over
+            basic HTML and CSS:
+          </p>
+          <div id="syllabus-pres">
+            <div id="syllabus-pres-hover-bg"></div>
+            <iframe
+              src="https://docs.google.com/presentation/d/e/2PACX-1vQIY5Rt0w-1gf_-j2eGNJntcaCwxbEbNrzoWAXKxy8quNqAwpy5cjT1gr26LQCfa3fV8gua0uGf6dba/embed?start=false&loop=false&delayms=60000"
+              frameborder="0"
+              width="480"
+              height="300"
+              allowfullscreen="true"
+              mozallowfullscreen="true"
+              webkitallowfullscreen="true"
+              title="syllabus presentation"
+              class="syllabus-pres-pres"
+            ></iframe>
+          </div>
+        </div>
+        <div id="example-club-site-container">
+          <h3 id="example-club-site-header">
+            Here are some example sites created in the club:
+          </h3>
+          <div class="example-club-site">
+            <a
+              href="Example sites/Hot-dog-website/Hot Dog.html"
+              target="_blank"
+              class="example-club-site-link"
+              >Hot Dog example</a
+            >
+          </div>
+          <div class="example-club-site">
+            <a
+              href="Example sites/Pasta-website/Pasta.html"
+              target="_blank"
+              class="example-club-site-link"
+              >Pasta example</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section class="web-dev-content">
+      <div class="web-dev-TOC-container">
+        <p class="web-dev-TOC-header">Skip to:</p>
+        <div class="web-dev-TOC-items">
+          <div>
+            <a href="#html-header" class="link">Intro to HTML</a>
+          </div>
+          <div><a href="#" class="link">Intro to CSS</a></div>
+        </div>
+      </div>
+
+      <!-- HTML content -->
+      <h1 class="language-header" id="html-header">Intro to HTML</h1>
+      <!-- HTML Background -->
+      <h3 class="content-header">What is HTML?</h3>
+      <div class="content">
+        HTML stands for Hyper Text Markup Language and is used to create
+        websites.<br />
+        It provides the skeletal foundation of a website and tells the browser
+        how to display content.
+      </div>
+      <!-- HTML Basics (getting started) -->
+      <h3 class="content-header">A Basic HTML File</h3>
+      <pre class="line-numbers">
+        <code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      <div class="content">
+        All HTML documents start with the declaration
+        <code class="language-html">&lt;!DOCTYPE html&gt;</code>. This tells the
+        browser the document type and helps render the file. <br />
+        All the HTML is written in between the
+        <code class="language-html">&lt;html&gt;</code> and
+        <code class="language-html">&lt;/html&gt;</code> tags. <br />
+        The content displayed on your webpage is written in between the
+        <code class="language-html">&lt;body&gt;</code> and
+        <code class="language-html">&lt;/body&gt;</code> tags while the settings
+        and not-displayed HTML goes inside the
+        <code class="language-html">&lt;head&gt;</code> and
+        <code class="language-html">&lt;/head&gt;</code> tags. <br />
+        A <code class="language-html">&lt;meta&gt;</code> element contains the
+        settings for how the browser should display the file. The default values
+        coding editors provide are sufficient.
+      </div>
+      <h3 class="content-header">HTML Syntax</h3>
+      <div class="content">
+        An HTML <strong>tag</strong> is defined using <code><></code>. A pair of
+        tags (opening and closing) is considered an
+        <strong>element</strong> where the closing tag name is preceded by a
+        forward slash (/). All the content of the element goes in between the
+        opening and closing tags: <br />
+        <code class="language-html"
+          >&lt;tag&gt;Content in the element&lt;/tag&gt;</code
+        >
+      </div>
+      <h3 class="content-header">HTML Headers</h3>
+      <div class="content">
+        Create your first HTML element! On your blank file, inside the body
+        tags, create an <strong>h1 header</strong>:
+        <code class="language-html">&lt;h1&gt;&lt;/h1&gt;</code>
+        <br />
+        <u>Make it a header about your favorite food.</u>
+        <pre class="line-numbers">
+          <code class="language-html">
+  &lt;!-- Example --&gt;
+  &lt;h1&gt;Condiments for a Hot Dog&lt;/h1&gt;
+          </code>
+        </pre>
+      </div>
+      <div class="content">
+        There are different levels of headings, ranging from h1 to h6, h1 having
+        the greatest font size and font weight. <u>Try it out!</u>
+      </div>
+      <h3 class="content-header">The Paragraph Tag</h3>
+      <div class="content">
+        The paragraph tag,
+        <code class="language-html">&lt;p&gt;&lt;/p&gt;</code>, is used for
+        displaying content such as this. It has a regular font size and weight.
+        <br />
+        <u
+          >Under your h1 heading, create write a paragraph that describes your
+          favorite food (e.g: what's in it?).</u
+        >
+        <pre class="line-numbers">
+          <code class="language-html">
+  &lt;p&gt;
+    On a hot dog, you can put sauces such as ketchup, mustard, BBQ sauce, mayo, etc. 
+    You can also put various toppings like relish, banana peppers, and onions.
+  &lt;/p&gt;
+          </code>
+        </pre>
+      </div>
+      <h3 class="content-header">Element Attributes</h3>
+      <div class="content">
+        All elements have <strong>attributes</strong>. They are defined inside
+        the opening tag and provide additional information. Think of them as
+        properties that you can change.
+        <br />
+        To use one, you state the name of the attribute and associate a value to
+        it:
+        <pre class="line-numbers">
+          <code class="language-html">
+          &lt;tag attribute=&quot;&quot;&gt;&lt;/tag&gt;
+          </code>
+        </pre>
+        To discover element attributes, you can google it or visit a
+        <a href="https://www.w3schools.com/" target="_blank" class="inline-link"
+          >documentation</a
+        >.
+      </div>
+      <h3 class="content-header">Links (Anchor Tags)</h3>
+      <div class="content">
+        What I did there by linking the documentation. That was pretty cool
+        right? That can be done with an anchor tag:
+        <code class="language-html"
+          >&lt;a href=&quot;url&quot;&gt;link text&lt;/a&gt;</code
+        >
+        <br />
+        The href attribute defines the destination of the link, which can be
+        external or internal (more on that later). You pass the destination URL
+        as the attribute value. This href attribute is <em>mandatory</em> for
+        any anchor tag or else it won't work.
+        <br />
+        One very useful optional attribute you can add is target="_blank":
+        <code class="language-html"
+          >&lt;a href=&quot;www.google.ca&quot;
+          target=&quot;_blank&quot;&gt;Google link&lt;/a&gt;</code
+        >
+        <br />
+        By adding this attribute, when the user clicks on the link, the browser
+        will automatically open a new tab instead of using the current tab!
+        <br />
+        <u
+          >Under your paragraph, add a link that allows the user to learn more
+          about your favorite food</u
+        >
+      </div>
+      <h3 class="content-header">HTML Text Formatting</h3>
+      <div class="content">
+        Paragraphs and paragraphs of text can be pretty dull. However, you can
+        style them! Here are some common formatting tags:
+        <br />
+        <pre class="line-numbers">
+          <code class="language-html">
+            &lt;!-- Bold -->
+            This text is &lt;strong&gt;bolded&lt;/strong&gt;
+
+            &lt;!-- Italics -->
+            This text is &lt;em&gt;italicized&lt;/em&gt;
+
+            &lt;!-- Underline -->
+            This text is &lt;u&gt;underlined&lt;/u&gt;
+
+            &lt;!-- Strikethrough -->
+            This text is &lt;del&gt;deleted&lt;/del&gt;
+          </code>
+        </pre>
+        You can always find more through a simple Google or documentation
+        search!
+        <br />
+        <u
+          >Add some of these formatters to your food description paragraph.
+          <br />
+          If you're up for it, create some more headers (maybe not h1) and
+          paragraphs. Add some more content to your food site and play with some
+          tags!
+        </u>
+      </div>
+      <h3 class="content-header">Images</h3>
+    </section>
+    <!-- Syntax highlighter -->
+    <!-- https://www.codiga.io/blog/display-code-snippets-in-html/ -->
+  </body>
+</html>

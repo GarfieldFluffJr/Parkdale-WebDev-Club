@@ -1,0 +1,16 @@
+@inlineCodeColor: #EBA4AC
+@inlineCodeBackground: #202330
+@blockBackground: #202330
+@baseColor: #EBA4AC
+@selectedColor: #b3d4fc
+@highlightBackground: #32384f
+@highlightAccent: #cfa5bd
+@commentColor: #5b71c7
+@punctuationColor: #FFF0F5
+@propertyColor: #FF4791
+@selectorColor: #FAE8B6
+@operatorColor: #FFF0F5
+@operatorBg: #202330
+@variableColor: #b267e6
+@functionColor: #ffc85b
+@keywordColor: #E6A1FF

@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: "Nunito", sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#food-description {
+  background-color: #ff7f50;
+  border-left: 10px solid #e65120;
+  padding: 10px;
+  /* border-radius: 5px; */
+}
+
+#hot-dog-main-header {
+  color: #8c0053;
+  text-align: center;
+}
+
+.des-em {
+  color: rgb(22, 101, 115);
+}
+
+#img-container {
+  display: flex;
+  justify-content: center;
+}
+
+#hot-dog-condiments-img {
+  border: 3px solid #0ac399;
+  border-radius: 10px;
+  width: clamp(200px, 95vw, 400px);
+  transition: width 1s ease;
+}
+
+#hot-dog-condiments-img:hover {
+  width: 450px;
+}
+
+#hot-dog-condiment-link {
+  /* text-decoration: none; */
+  text-align: center;
+}
